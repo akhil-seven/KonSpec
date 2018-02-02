@@ -1,0 +1,29 @@
+page-addstaff {
+
+}
+.center{
+    // text-align: center;
+    width:80%;
+    margin:0 auto;
+}
+.item-md{
+    width:70%;
+    position:relative;
+    padding-left:2px!important;
+
+}
+ion-row ion-col label{
+    color:black!important;
+    text-align:unset!important;
+}
+.form-group input[type="text"]{
+    width:75%!important;
+}
+ion-col
+{
+    position:relative;
+    left:10%;
+}
+.button{
+    width:100%;
+}

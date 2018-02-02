@@ -1,14 +1,47 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+     KonSpec
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ <div class="card">
+	<div class="card-header" data-background-color="purple">
+		<h4 class="title">Staff List</h4>
+		
+			<button class="btn btn-warning" class="btn" (click)="addstaff()">Add New</button>
+			
+	
+	</div>
+	<div class="card-content table-responsive table-full-width">
+		<table class="table">
+			<thead class="text-danger">
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Phone</th>
+				<th>Email</th>
+				<th>Role</th>
+				<th>Action</th>
+			</thead>
+			<tbody *ngIf="listStaff">
+				<tr *ngFor="let tuple of data">
+					<td>{{tuple.first_name}}</td>
+					<td>{{tuple.last_name}}</td>
+					<td>{{tuple.phone}}</td>
+				<td>{{tuple.email}}</td>
+					<td>{{tuple.role}}</td>
+					<td><button ion-button icon-start (click)="goEditPage(tuple._id)" class="editbtn">
+  <ion-icon ios="ios-create" md="md-create"></ion-icon>
+ 
+</button></td>
+				</tr>
+				
+			</tbody>
+		</table>
+
+	</div>
+</div>
+  
 </ion-content>

@@ -39,6 +39,7 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
+  
 );
 
 
@@ -70,7 +71,7 @@ $colors: (
 // so that the above variables are used and Ionic's
 // default are overridden.
 
-@import "ionic.theme.default";
+@import "../assets/sass/material-dashboard.scss";
 
 
 // Ionicons
